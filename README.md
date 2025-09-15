@@ -12,6 +12,19 @@ Woogle is a prototype **analytics health check dashboard** that blends **BigQuer
     - “Summarise anomalies in the last 7 days”
     - “Why did add_to_cart drop yesterday?”
     - “Compare revenue vs forecast for last week”
+   
+    +---------+        +----------------+        +-----------------+        +-------------+
+|  User   | -----> |   Olive (LLM)  | -----> |   MCP (BigQuery)| -----> |   BigQuery  |
++---------+        +----------------+        +-----------------+        +-------------+
+     |                   |                          |                          |
+     | Ask in NL         | Generate SQL + context   | Secure query execution   | Return results
+     |------------------>|------------------------->|------------------------->|----------------
+     |                   |                          |                          |
+     | <---------------- | <----------------------- | <----------------------- |
+     |  Plain-English     |   Structured results     |   Query output           |
+     |  insights + next   |   + anomaly detection    |                          |
+     |  steps             |                          |                          |
+
 
 - **🔍 Searchable Metrics**
   - Autocomplete search bar for key GA4 and business events.

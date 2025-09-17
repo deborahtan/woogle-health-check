@@ -105,3 +105,53 @@ This prototype is designed to:
 
 This is a **prototype**. All data shown is simulated for demonstration purposes.  
 Replace demo logic with live BigQuery + MCP integrations before production use.
+
+## 🔍 Demo Queries
+
+Here are some example questions you can ask Olive once the MCP → BigQuery integration is live.  
+These map directly to the categories in the dashboard.
+
+### 📢 Campaigns
+- “Show me Cartology campaign CTR vs last quarter.”
+- “Which channels drove the biggest uplift in purchases yesterday?”
+- “Compare campaign ROI across email vs app push.”
+
+### 🛒 UX & Conversion
+- “Why did add_to_cart drop yesterday?”
+- “What’s the checkout abandonment rate on mobile vs desktop?”
+- “Highlight any anomalies in conversion over the last 7 days.”
+
+### 💰 Sales (Revenue vs Forecast)
+- “Compare actual revenue vs forecast for last week.”
+- “Which categories over‑ or under‑performed forecast?”
+- “Show me revenue variance by day for the last 14 days.”
+
+### ⭐ Customer Experience
+- “What’s the latest NPS trend?”
+- “How many weekly active app users did we have last week?”
+- “Are app sessions growing faster than web sessions?”
+
+### 📦 Category & SKU Highlights
+- “Which SKUs had the largest sales uplift week‑on‑week?”
+- “Highlight underperforming SKUs vs forecast.”
+- “Show me seasonal product performance (e.g. Easter, Christmas).”
+
+### 🛠️ Data Engineering
+- “List any missing GA4 partitions in the last 7 days.”
+- “What % of yesterday’s data has arrived so far?”
+- “Detect any new event parameters not in the documented schema.”
+
+### 📊 Analytics Ops
+- “Summarise anomalies across all KPIs today.”
+- “Check if tracking is stable across web and app.”
+- “List any schema mismatches or dedupe issues.”
+
+---
+
+### Prompt Library
+
+👉 These queries demonstrate how Olive can bridge **business questions** and **technical diagnostics** in one place.  
+- **Business stakeholders** get plain‑English answers.  
+- **Analysts** get anomaly detection and drill‑through.  
+- **Engineers** get ingestion and schema health checks.
+
